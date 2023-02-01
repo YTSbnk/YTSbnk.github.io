@@ -4,8 +4,12 @@
 <input id="pwd"></input>
 <button onclick="login()">Login</button>
 <script>
-function login()
-document.getElementById("person").innerHTML = person;
+function login() {
+  var usr = document.getElementById("usr").innerHTML
+  var pwd = document.getElementById("pwd").innerHTML
+  testcred(usr, pwd)
+  document.getElementById("person").innerHTML = person;
+}
 
 function testcred(user, pass) {
 for (let i = 0; i < names.length; i++) {
